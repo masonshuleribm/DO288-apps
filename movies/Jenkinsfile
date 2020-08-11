@@ -103,7 +103,7 @@ pipeline {
                 }
                 script {
                     openshift.withCluster() {
-                      opensift.tag("${DEV_PROJECT}:latest", "${STAGE_PROJECT}:stage"
+                      opensift.tag("${DEV_PROJECT}:latest", "${STAGE_PROJECT}:stage")
                     }
                 }
             }
